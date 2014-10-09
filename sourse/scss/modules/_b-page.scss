@@ -1,0 +1,22 @@
+.b-page{
+    padding: em(26) 0 0;
+    &__featured{
+        width: 100%;
+        display: block;
+        margin-bottom: em(15);
+    }
+    &__title{
+        line-height: 1.2;
+        $font-size: 48;
+        font-size: em($font-size);
+        color: #245378;
+        padding: em(24, $font-size) 0 em(38, $font-size);
+    }
+    .wpcf7-response-output{
+        margin: 15px;
+        font-size:13px;
+    }
+    .wpcf7-not-valid-tip{
+        font-size:11px!important;
+    }
+}

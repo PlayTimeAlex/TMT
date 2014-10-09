@@ -1,0 +1,141 @@
+@@include('blocks/_b-header.html')
+<div class="b-page">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="b-page__title">Контакты</h1>
+                <div class="b-text">
+                    <div class="row">
+                        <div class="span7">
+                            <h6>Если у Вас есть вопросы, пожалуйста, заполните эту форму и мы свяжемся с Вами в ближайшее время</h6>
+                            <div class="b-form">
+                                <div class="b-form__el">
+                                    <div class="row">
+                                        <div class="span4">
+                                            <label class="b-form__label">Имя / Фамилия</label>
+                                        </div>
+                                        <div class="span8">
+                                            <input class="b-form__text b-form__text_block" type="text" placeholder="Имя / Фамилия"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-form__el">
+                                    <div class="row">
+                                        <div class="span4">
+                                            <label class="b-form__label">Компания</label>
+                                        </div>
+                                        <div class="span8">
+                                            <input class="b-form__text b-form__text_block" type="text" placeholder="Компания"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-form__el">
+                                    <div class="row">
+                                        <div class="span4">
+                                            <label class="b-form__label">Должность</label>
+                                        </div>
+                                        <div class="span8">
+                                            <input class="b-form__text b-form__text_block" type="text" placeholder="Занимаемая Вами должность"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-form__el">
+                                    <div class="row">
+                                        <div class="span4">
+                                            <label class="b-form__label">Эл. адрес</label>
+                                        </div>
+                                        <div class="span8">
+                                            <input class="b-form__text b-form__text_block" type="email" placeholder="Адрес Вашей электронной почты"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-form__el">
+                                    <div class="row">
+                                        <div class="span4">
+                                            <label class="b-form__label">Телефон</label>
+                                        </div>
+                                        <div class="span8">
+                                            <input class="b-form__text" type="tel" placeholder="Телефон"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-form__el">
+                                    <div class="row">
+                                        <div class="span4">
+                                            <label class="b-form__label">Вопрос</label>
+                                        </div>
+                                        <div class="span8">
+                                            <textarea class="b-form__textarea b-form__textarea_block" rows="5" placeholder="Вопрос"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-form__el">
+                                    <div class="row">
+                                        <div class="span4"></div>
+                                        <div class="span8"><button class="b-form__submit" type="submit">отправить</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span5 b-contacts__detalis">
+                            <p><strong>Юридический адрес:</strong> 107031 Москва, Петровский пер., д.5, стр.8</p>
+                            <p><strong>Фактический адрес:</strong> 125375, Москва, ул.Тверская, д. 7, подъезд 9, этаж 6</p>
+                            <p><strong>Телефон:</strong> 7 495 740 98 80</p>
+                            <p><strong>Эл. почта:</strong> <a href="mailto:info@tmt-consulting.ru">info@tmt-consulting.ru</a></p>
+                            <div class="b-contacts__tabs">
+                                <a class="b-contacts__map-link current" href="#" data-coord="[55.76645,37.61366499999997]" data-adress="Россия, город Москва, Москва, Петровский переулок дом 5 строение 8">Юридический адрес</a>|
+                                <a class="b-contacts__map-link " href="#" data-coord="[55.7592784,37.610444400000006]" data-adress="125375, Москва, ул.Тверская, д. 7, подъезд 9, этаж 6">Фактический адрес</a>
+                            </div>
+                            <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                            <script type="text/javascript">
+                                jQuery(document).ready(function(){
+                                    ymaps.ready(init);
+                                    var myMap;
+                                    var $link = jQuery('.b-contacts__map-link:first-child');
+                                    var coord = $link.data('coord');
+                                    var text = $link.data('adress');
+
+                                    function init(){
+                                        myMap = new ymaps.Map("b-contacts__map", {
+                                            center: coord,
+                                            zoom: 13
+                                        });
+                                        myPlacemark = new ymaps.Placemark(coord, {
+                                            balloonContent: text
+                                        });
+
+                                        myMap.geoObjects.add(myPlacemark);
+                                        jQuery('.b-contacts__map-link').click(function(){
+                                            if(jQuery(this).hasClass('current')) return;
+
+                                            var coord = jQuery(this).data('coord');
+                                            var text = jQuery(this).data('adress');
+
+                                            myMap.geoObjects.remove(myPlacemark);
+
+                                            myPlacemark = new ymaps.Placemark(coord, {
+                                                balloonContent: text
+                                            });
+                                            myMap.geoObjects.add(myPlacemark);
+
+                                            myMap.setCenter(coord);
+
+                                            jQuery('.b-contacts__map-link').removeClass('current');
+                                            jQuery(this).addClass('current');
+
+                                            return false;
+                                        });
+                                    }
+                                });
+                            </script>
+                            <div class="b-contacts__map" id="b-contacts__map">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

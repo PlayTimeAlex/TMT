@@ -1,0 +1,17 @@
+.b-tag{
+    &__item{
+        list-style: none;
+        padding: em(3) em(24);
+        > a{
+            $font-size: 14;
+            font-size: em($font-size);
+            color: #00587f;
+            font-weight: 700;
+        }
+        &.current > a{
+            cursor: default;
+            text-decoration: none;
+            color: #F26522;
+        }
+    }
+}

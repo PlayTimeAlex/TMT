@@ -1,0 +1,34 @@
+.b-nav{
+    padding: em(28) 0 em(25);
+    .menu-item{
+        display: inline-block;
+        padding: em(0) em(16) 0 em(21);
+        position: relative;
+        &:last-child{
+            padding-right: 0;
+        }
+        &:first-child:before{
+            display: none;
+        }
+        &:before{
+            content:" ";
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #96292d;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -3px;
+        }
+        > a{
+            $font-size: 16;
+            font-size: em($font-size);
+            text-decoration: none;
+            font-weight: 700;
+            color: #245378;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.b-created{
+    text-align: right;
+    $font-size: 13;
+    font-size: em($font-size);
+    color: #717171;
+    padding: em(32, $font-size) em(80, $font-size) em(30, $font-size) 0;
+    background: url(../images/mmp-corner.png) no-repeat right bottom;
+}

@@ -1,0 +1,77 @@
+@@include('blocks/_b-header.html')
+<div class="b-page">
+    <div class="container">
+        <div class="row">
+            <aside class="span4 b-sidebar">
+                <div class="widget">
+                    <h2 class="widgettitle">По сегментам</h2>
+                    <div class="b-catlist open">
+                        <div class="b-catlist__header"><a href="#">телекоммуникации</a></div>
+                        <ul class="b-catlist__list">
+                            <li class="b-catlist__item current"><a href="#">Все</a></li>
+                            <li class="b-catlist__item"><a href="#">Доступ в Интернет</a></li>
+                            <li class="b-catlist__item"><a href="#">Сотовая связь</a></li>
+                            <li class="b-catlist__item"><a href="#">Платное телевидение</a></li>
+                            <li class="b-catlist__item"><a href="#">Межоператорский рынок</a></li>
+                            <li class="b-catlist__item"><a href="#">Фиксированная телефония</a></li>
+                            <li class="b-catlist__item"><a href="#">Спутниковая связь</a></li>
+                        </ul>
+                    </div>
+                    <div class="b-catlist">
+                        <div class="b-catlist__header"><a href="#">медиа</a></div>
+                        <ul class="b-catlist__list">
+                            <li class="b-catlist__item current"><a href="#">Все</a></li>
+                            <li class="b-catlist__item"><a href="#">Доступ в Интернет</a></li>
+                            <li class="b-catlist__item"><a href="#">Сотовая связь</a></li>
+                            <li class="b-catlist__item"><a href="#">Платное телевидение</a></li>
+                            <li class="b-catlist__item"><a href="#">Межоператорский рынок</a></li>
+                            <li class="b-catlist__item"><a href="#">Фиксированная телефония</a></li>
+                            <li class="b-catlist__item"><a href="#">Спутниковая связь</a></li>
+                        </ul>
+                    </div>
+                    <div class="b-catlist">
+                        <div class="b-catlist__header"><a href="#">технологии</a></div>
+                        <ul class="b-catlist__list">
+                            <li class="b-catlist__item current"><a href="#">Все</a></li>
+                            <li class="b-catlist__item"><a href="#">Доступ в Интернет</a></li>
+                            <li class="b-catlist__item"><a href="#">Сотовая связь</a></li>
+                            <li class="b-catlist__item"><a href="#">Платное телевидение</a></li>
+                            <li class="b-catlist__item"><a href="#">Межоператорский рынок</a></li>
+                            <li class="b-catlist__item"><a href="#">Фиксированная телефония</a></li>
+                            <li class="b-catlist__item"><a href="#">Спутниковая связь</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h2 class="widgettitle">по категориям</h2>
+                    <ul class="b-tag">
+                        <li class="b-tag__item"><a href="#">Обзоры</a></li>
+                        <li class="b-tag__item"><a href="#">Готовые исследования</a></li>
+                        <li class="b-tag__item"><a href="#">Презентации</a></li>
+                        <li class="b-tag__item"><a href="#">Статьи</a></li>
+                        <li class="b-tag__item"><a href="#">Комментарии</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="span8">
+                <h1 class="b-page__title">Направления</h1>
+                <div class="b-page__archive">
+                    @@include('blocks/_b-aitem_direction.html')
+                    @@include('blocks/_b-aitem_direction.html')
+                    @@include('blocks/_b-aitem_direction.html')
+                    @@include('blocks/_b-aitem_direction.html')
+
+                </div>
+                <div class="wp-pagenavi">
+                    <a class="previouspostslink" rel="prev" href="#">&nbsp;</a>
+                    <a class="page smaller" href="#">1</a>
+                    <a class="page smaller" href="#">2</a>
+                    <span class="current">3</span>
+                    <a class="page larger" href="#">4</a>
+                    <a class="nextpostslink" rel="next" href="#">&nbsp;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

@@ -1,0 +1,10 @@
+.b-home{
+    background: url(../images/b-home.png) no-repeat center bottom;
+    &__title{
+        color: #245378;
+        $font-size: 28;
+        font-size: em($font-size);
+        line-height: 1.1;
+        padding-bottom: em(40, $font-size);
+    }
+}

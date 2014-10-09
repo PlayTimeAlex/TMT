@@ -1,0 +1,11 @@
+.widget{
+    padding-bottom: em(10);
+    .widgettitle{
+        color: #f26522;
+        $font-size: 22;
+        font-size: em($font-size);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: em(8, $font-size) 0 em(14, $font-size) em(25, $font-size);
+    }
+}

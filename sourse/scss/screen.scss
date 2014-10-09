@@ -1,0 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+
+@import "modules/base";
+@import "modules/reset";
+@import "modules/grid";
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+strong{
+    font-weight: 700;
+}
+em{
+    font-style: italic;
+}
+@import "modules/b-header";
+@import "modules/b-sidebar";
+@import "modules/b-tel";
+@import "modules/b-nav";
+@import "modules/b-service";
+@import "modules/b-footer";
+@import "modules/b-text";
+@import "modules/b-paging";
+@import "modules/b-page";
+@import "modules/b-slider";
+@import "modules/b-aitem";
+@import "modules/b-home";
+@import "modules/b-direction";
+@import "modules/widget";
+@import "modules/b-catlist";
+@import "modules/b-tag";
+@import "modules/b-created";
+@import "modules/b-contacts";
+@import "modules/b-form";

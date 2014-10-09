@@ -1,0 +1,51 @@
+.b-text{
+    color: #464646;
+    a{
+        color: #0076A3;
+    }
+    h1, h2, h3, h4, h5, h6{
+        color: #7D7D7D;
+        line-height: 1.2;
+        padding: .5em 0 0.2em;
+    }
+    h1{
+        $font-size: 48;
+        font-size: em($font-size);
+        color: #245378;
+    }
+    h2{
+        $font-size: 42;
+        font-size: em($font-size);
+    }
+    h3{
+        $font-size: 36;
+        font-size: em($font-size);
+    }
+    h4{
+        $font-size: 30;
+        font-size: em($font-size);
+    }
+    h5{
+        $font-size: 24;
+        font-size: em($font-size);
+    }
+    h6{
+        $font-size: 18;
+        font-size: em($font-size);
+    }
+    p{
+        $font-size: 15;
+        font-size: em($font-size);
+        line-height: 1.6;
+        padding: em(12, $font-size) 0;
+    }
+    blockquote{
+        background-color: #f2f5e3;
+        border-radius: 3px;
+        color: #7d7d7d;
+        font-style: italic;
+        padding: em(25) em(27);
+        line-height: 1.6;
+        margin: em(15) 0;
+    }
+}

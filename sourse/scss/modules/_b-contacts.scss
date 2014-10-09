@@ -1,0 +1,37 @@
+.b-contacts{
+    &__detalis{
+        padding-top: em(10);
+        p{
+            $font-size: 13;
+            font-size: em($font-size);
+            padding: em(5, $font-size) 0;
+            line-height: 1.2;
+        }
+    }
+    &__map{
+        height: 420px;
+        background-color: rgba(0, 0, 0, .2);
+        width: 100%;
+        box-shadow: 0 7px 7px rgba(0,0,0,.4);
+    }
+    &__tabs{
+        $font-size: 15;
+        font-size: em($font-size);
+        padding: em(12, $font-size) 0 em(22, $font-size);
+        /*color: #ED1C24;*/
+        color: #0076A3;
+        > a{
+            display: inline-block;
+            padding: 0 em(5, $font-size);
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+            &.current{
+                color: #ED1C24;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.row {
+  width: 100%; }
+  .row:before, .row:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  .row:after {
+    clear: both; }
+  .row [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 1px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 1.83673%; }
+  .row [class*="span"]:first-child {
+    margin-left: 0; }
+  .row .span1 {
+    width: 6.64966%; }
+  .row .span2 {
+    width: 15.13605%; }
+  .row .span3 {
+    width: 23.62245%; }
+  .row .span4 {
+    width: 32.10884%; }
+  .row .span5 {
+    width: 40.59524%; }
+  .row .span6 {
+    width: 49.08163%; }
+  .row .span7 {
+    width: 57.56803%; }
+  .row .span8 {
+    width: 66.05442%; }
+  .row .span9 {
+    width: 74.54082%; }
+  .row .span10 {
+    width: 83.02721%; }
+  .row .span11 {
+    width: 91.51361%; }
+  .row .span12 {
+    width: 100%; }
+  .row .offset1 {
+    margin-left: 10.32313%; }
+    .row .offset1:first-child {
+      margin-left: 8.48639%; }
+  .row .offset2 {
+    margin-left: 18.80952%; }
+    .row .offset2:first-child {
+      margin-left: 16.97279%; }
+  .row .offset3 {
+    margin-left: 27.29592%; }
+    .row .offset3:first-child {
+      margin-left: 25.45918%; }
+  .row .offset4 {
+    margin-left: 35.78231%; }
+    .row .offset4:first-child {
+      margin-left: 33.94558%; }
+  .row .offset5 {
+    margin-left: 44.26871%; }
+    .row .offset5:first-child {
+      margin-left: 42.43197%; }
+  .row .offset6 {
+    margin-left: 52.7551%; }
+    .row .offset6:first-child {
+      margin-left: 50.91837%; }
+  .row .offset7 {
+    margin-left: 61.2415%; }
+    .row .offset7:first-child {
+      margin-left: 59.40476%; }
+  .row .offset8 {
+    margin-left: 69.72789%; }
+    .row .offset8:first-child {
+      margin-left: 67.89116%; }
+  .row .offset9 {
+    margin-left: 78.21429%; }
+    .row .offset9:first-child {
+      margin-left: 76.37755%; }
+  .row .offset10 {
+    margin-left: 86.70068%; }
+    .row .offset10:first-child {
+      margin-left: 84.86395%; }
+  .row .offset11 {
+    margin-left: 95.18707%; }
+    .row .offset11:first-child {
+      margin-left: 93.35034%; }

@@ -1,0 +1,32 @@
+.b-sidebar{
+    padding: em(38) 0 0;
+    .menu{
+        padding: em(7) 0;
+    }
+    .menu-item{
+        display: block;
+        padding: em(7) em(24) em(6);
+        > a{
+            $font-size: 15;
+            font-size: em($font-size);
+            font-weight: 700;
+            color: #245378;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &.current-menu-item{
+            > a{
+                text-decoration: none;
+                cursor: default;
+                color: #ed1c24;
+            }
+        }
+        &.current-category-ancestor{
+            > a {
+                color: #ed1c24;
+            }
+        }
+    }
+}

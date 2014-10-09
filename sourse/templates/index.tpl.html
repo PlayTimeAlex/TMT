@@ -1,0 +1,56 @@
+@@include('blocks/_b-header.html')
+<div class="b-page">
+    <div class="b-slider__container">
+        <div class="b-slider__w-container">
+            <div class="b-slider">
+                <ul class="slides">
+                    <li><img src="images/content/slide1.jpg" alt=""/></li>
+                    <li><img src="images/content/slide1.jpg" alt=""/></li>
+                    <li><img src="images/content/slide1.jpg" alt=""/></li>
+                </ul>
+                <div class="b-slider__content">
+                    <table class="b-slider__table">
+                        <tr>
+                            <td>Телекоммуникации<br />Медиа<br />Технологии</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="b-home">
+            <div class="row">
+                <div class="span6">
+                    <h2 class="b-home__title">Последние <strong>исследования</strong></h2>
+                    @@include('blocks/_b-aitem.html')
+                    <article class="b-aitem b-aitem_short">
+                        <div class="row b-aitem__header">
+                            <img class="b-aitem__photo" src="images/content/krilov.jpg" width="66" height="66" alt=""/>
+                            <div class="b-aitem__detalis">
+                                <h2 class="b-aitem__title"><a href="analitics-inner.html">Ненадежный голос</a></h2>
+                                <span class="b-aitem__autor">By <a href="#">Константин Анкилов</a></span>
+                                <span class="b-aitem__date">8/7/2014</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="span6">
+                    <h2 class="b-home__title">Мнение <strong>аналитиков</strong></h2>
+                    @@include('blocks/_b-aitem.html')
+                    <article class="b-aitem b-aitem_short">
+                        <div class="row b-aitem__header">
+                            <img class="b-aitem__photo" src="images/content/krilov.jpg" width="66" height="66" alt=""/>
+                            <div class="b-aitem__detalis">
+                                <h2 class="b-aitem__title"><a href="analitics-inner.html">Ненадежный голос</a></h2>
+                                <span class="b-aitem__autor">By <a href="#">Константин Анкилов</a></span>
+                                <span class="b-aitem__date">8/7/2014</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('blocks/_b-footer.html')
