@@ -37,9 +37,19 @@
         <div class="b-home">
             <div class="row">
                 <div class="span6">
-				<h2 class="b-home__title"><?php the_field('left_title'); ?></h2>
 				<?php 
-					$posts = get_posts(array('category' => get_field('left_category'), 'posts_per_page'   => 2));
+					$category = get_field('left_category_select');
+					$tags = get_field('left_category');
+					$tagsId = array();
+					$tagsSlug = array();
+					foreach($tags as $key => $val) {
+						$tagsId[] = $val->term_id;
+						$tagsSlug[] = $val->slug;
+					}
+				?>
+				<h2 class="b-home__title"><a href="<?php echo get_category_link($category->term_id).'?tag='.implode(',',$tagsSlug);?>"><?php the_field('left_title'); ?></a></h2>
+				<?php 
+					$posts = get_posts(array('tag__in' => $tagsId, 'posts_per_page'   => 2, 'category' => $category->term_id));
 					$i = 0;
 					foreach ( $posts as $post ) : setup_postdata( $post ); 
 					$authorId = get_the_author_meta('ID');	
@@ -55,7 +65,7 @@
                             </div>
                         </div>
                         <div class="b-text b-aitem__text">
-                            <p><?php echo get_the_excerpt(); ?><a class="b-aitem__more" href="<?php echo get_permalink();?>">больше</a></p>
+                            <p><?php echo get_the_excerpt(); ?>&nbsp;&nbsp;&nbsp;&nbsp;<a class="b-aitem__more" href="<?php echo get_permalink();?>">больше</a></p>
                         </div>
                     </article>
 				<?php 
@@ -79,9 +89,19 @@
 				?>
                 </div>
                 <div class="span6">
-				<h2 class="b-home__title"><?php the_field('right_title'); ?></h2>
 				<?php 
-					$posts = get_posts(array('category' => get_field('right_category'), 'posts_per_page'   => 2));
+					$category = get_field('right_category_select');
+					$tags = get_field('right_category');
+					$tagsId = array();
+					$tagsSlug = array();
+					foreach($tags as $key => $val) {
+						$tagsId[] = $val->term_id;
+						$tagsSlug[] = $val->slug;
+					}
+				?>
+				<h2 class="b-home__title"><a href="<?php echo get_category_link($category->term_id).'?tag='.implode(',',$tagsSlug);?>"><?php the_field('right_title'); ?></a></h2>
+				<?php 
+					$posts = get_posts(array('tag__in' => $tagsId, 'posts_per_page'   => 2, 'category' => $category->term_id));
 					$i = 0;
 					foreach ( $posts as $post ) : setup_postdata( $post ); 
 					$authorId = get_the_author_meta('ID');	
@@ -97,7 +117,7 @@
                             </div>
                         </div>
                         <div class="b-text b-aitem__text">
-                            <p><?php echo get_the_excerpt(); ?><a class="b-aitem__more" href="<?php echo get_permalink();?>">больше</a></p>
+                            <p><?php echo get_the_excerpt(); ?>&nbsp;&nbsp;&nbsp;&nbsp;<a class="b-aitem__more" href="<?php echo get_permalink();?>">больше</a></p>
                         </div>
                     </article>
 				<?php 

@@ -1,5 +1,8 @@
 .widget{
-    padding-bottom: em(10);
+    padding-top: em(40);
+    &:first-child{
+        padding-top: 0;
+    }
     .widgettitle{
         color: #f26522;
         $font-size: 22;

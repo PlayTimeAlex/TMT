@@ -6,7 +6,7 @@
         <div class="row">
             <aside class="span4 b-sidebar">
 				<?php
-					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('left_sidebar') ) : endif; 
+					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('archive_sidebar') ) : endif; 
 				?>
             </aside>
             <div class="span8">
@@ -17,12 +17,13 @@
 					<h1 class="b-page__title"><?php echo get_category_by_slug($parent)->name; ?></h1>
 <?php
 					} else {
-					$category = get_the_category();
+					/*$category = get_the_category();
 					$cat_tree = get_category_parents($category[0]->term_id, FALSE, ':', TRUE);
 					$top_cat = explode(':',$cat_tree);
-					$parent = $top_cat[0];
+					$parent = $top_cat[0];*/
 ?>
-					<h1 class="b-page__title"><?php echo get_category_by_slug($parent)->name; ?></h1>
+					<!--<h1 class="b-page__title"><?php //echo get_category_by_slug($parent)->name; ?></h1>-->
+					<div style="margin-top:70px;width:100%;"></div>
 <?php					
 					}
 				?>
@@ -38,10 +39,24 @@
                                 <h2 class="b-aitem__title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
                                 <span class="b-aitem__autor">By <a href="<?php echo get_author_posts_url($authorId); ?>"><?php echo get_the_author(); ?></a></span>
                                 <span class="b-aitem__date"><?php the_time('d.m.Y'); ?></span>
+							<?php
+								if( have_rows('files') ) {
+									while ( have_rows('files') ) : the_row();
+									
+									$file = get_sub_field('file');
+									if($file){
+									$fileSize = round(filesize(get_attached_file($file['id']))/1024/1024, 2);
+							?>
+                            <span class="b-aitem__file"><a href="<?php echo $file['url'];?>">Скачать PDF файл</a> (<?php echo $fileSize;?> мб ~ <?php echo round($fileSize/0.125)?> сек)</span>
+							<?php 
+									}
+									endwhile;
+								} 
+							?>
                             </div>
                         </div>
                         <div class="b-text b-aitem__text">
-                            <p><?php echo get_the_excerpt(); ?><a class="b-aitem__more" href="<?php echo get_permalink();?>">больше</a></p>
+                            <p><?php echo get_the_excerpt(); ?>&nbsp;&nbsp;&nbsp;&nbsp;<a class="b-aitem__more" href="<?php echo get_permalink();?>">больше</a></p>
                         </div>
                 </article>
 				<?php 

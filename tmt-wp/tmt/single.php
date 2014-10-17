@@ -6,15 +6,13 @@
 	$cat_tree = get_category_parents($category[0]->term_id, FALSE, ':', TRUE);
 	$top_cat = explode(':',$cat_tree);
 	$parent = $top_cat[0];
-	$file = get_field('file');
-	$fileSize = round(filesize(get_attached_file($file['id']))/1024/1024, 2);
 ?>
 <div class="b-page">
     <div class="container">
         <div class="row">
             <aside class="span4 b-sidebar">
 				<?php
-					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('left_sidebar') ) : endif; 
+					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('post_sidebar') ) : endif; 
 				?>
             </aside>
             <div class="span8">
@@ -26,7 +24,20 @@
                             <h1 class="b-aitem__title"><?php the_title(); ?></h1>
                             <span class="b-aitem__autor">By <a href="<?php echo get_author_posts_url($authorId); ?>"><?php echo get_the_author(); ?></a></span>
                             <span class="b-aitem__date"><?php the_time('d.m.Y'); ?></span>
+							<?php
+								if( have_rows('files') ) {
+									while ( have_rows('files') ) : the_row();
+									
+									$file = get_sub_field('file');
+									if($file){
+									$fileSize = round(filesize(get_attached_file($file['id']))/1024/1024, 2);
+							?>
                             <span class="b-aitem__file"><a href="<?php echo $file['url'];?>">Скачать PDF файл</a> (<?php echo $fileSize;?> мб ~ <?php echo round($fileSize/0.125)?> сек)</span>
+							<?php 
+									}
+									endwhile;
+								} 
+							?>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,444 @@
+<graphml version="1.3" xmlns="http://graphml.graphdrawing.org/xmlns/graphml" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <key id="d0" for="all" attr.name="usertags" attr.type="complex"/>
+  <key id="d1" for="node" attr.name="style" attr.type="complex"/>
+  <key id="d2" for="node" attr.name="labels" attr.type="complex"/>
+  <key id="d3" for="node" attr.name="node-2-id" attr.type="string"/>
+  <key id="d4" for="node" attr.name="geometry" attr.type="complex">
+    <y:Geometry x="-15" y="-15" width="30" height="30"/>
+  </key>
+  <key id="d5" for="node" attr.name="nodeinsets" attr.type="complex">
+    <y:Insets left="0" top="0" right="0" bottom="0"/>
+  </key>
+  <key id="d6" for="node" attr.name="node-description" attr.type="string"/>
+  <key id="d7" for="node" attr.name="node-url" attr.type="string"/>
+  <key id="d8" for="node" attr.name="http://www.yworks.com/xml/yfiles-graphml/1.0/nodeviewstates" attr.type="complex"/>
+  <key id="d9" for="node" attr.name="http://www.yworks.com/xml/yfiles-graphml/1.0/expansionstate" attr.type="boolean">
+    <default>true</default>
+  </key>
+  <key id="d10" for="edge" attr.name="style" attr.type="complex"/>
+  <key id="d11" for="edge" attr.name="labels" attr.type="complex"/>
+  <key id="d12" for="edge" attr.name="edge-2-id" attr.type="string"/>
+  <key id="d13" for="edge" attr.name="geometry" attr.type="complex">
+    <y:Path/>
+  </key>
+  <key id="d14" for="edge" attr.name="edge-description" attr.type="string"/>
+  <key id="d15" for="edge" attr.name="edge-url" attr.type="string"/>
+  <key id="d16" for="edge" attr.name="http://www.yworks.com/xml/yfiles-graphml/1.0/edgeviewstates" attr.type="complex"/>
+  <key id="d17" for="port" attr.name="style" attr.type="complex"/>
+  <key id="d18" for="port" attr.name="geometry" attr.type="complex">
+    <y:Geometry x="0" y="0"/>
+  </key>
+  <key id="d19" for="port" attr.name="http://www.yworks.com/xml/yfiles-graphml/1.0/portviewstates" attr.type="complex"/>
+  <key id="d20" for="graphml" yfiles.type="resources"/>
+  <key id="d21" for="graph" attr.name="sharedData" attr.type="complex"/>
+  <graph id="G" edgedefault="directed">
+    <data key="d21">
+      <y:SharedData>
+        <EntityRelationshipNodeStyle type="EntityRelationship_Entity" id="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0">
+          <EntityRelationshipNodeStyle.stroke>
+            <y:Pen refid="7"/>
+          </EntityRelationshipNodeStyle.stroke>
+          <EntityRelationshipNodeStyle.textFormat>
+            <y:Font refid="4"/>
+          </EntityRelationshipNodeStyle.textFormat>
+          <EntityRelationshipNodeStyle.fill>
+            <y:Brush refid="13"/>
+          </EntityRelationshipNodeStyle.fill>
+        </EntityRelationshipNodeStyle>
+        <y:Brush name="SolidBrush" color="Black" id="2"/>
+        <y:LineType type="dashed" width="1" color="#000000" id="3"/>
+        <y:Font family="Dialog" points="12" style="Regular" color="#000000" id="4"/>
+        <y:ModelState id="5">
+          <y:Insets left="0" right="0" top="0" bottom="0"/>
+        </y:ModelState>
+        <y:Pen name="SolidColor" color="Black" width="1" id="6"/>
+        <y:Pen name="SolidColor" color="Black" width="1" id="7"/>
+        <y:Pen name="SolidColor" color="Black" width="1" id="8"/>
+        <y:InteriorLabelModel position="Center" id="9">
+          <y:ModelState refid="5"/>
+        </y:InteriorLabelModel>
+        <y:Font family="Dialog" points="12" style="Regular" color="#000000" id="10"/>
+        <y:Pen name="SolidColor" color="Black" width="1" id="11"/>
+        <y:ISimpleLabelStyle clipText="true" autoFlip="true" id="12">
+          <y:Font refid="10"/>
+          <y:Brush name="SolidBrush" color="Black"/>
+        </y:ISimpleLabelStyle>
+        <y:Brush name="LinearGradient" angle="45" id="13">
+          <y:GradientEntry color="#ffe8eef7" ratio="0"/>
+          <y:GradientEntry color="#ffb7c9e3" ratio="0.66"/>
+        </y:Brush>
+      </y:SharedData>
+    </data>
+    <node id="G:n0">
+      <data key="d3">0</data>
+      <data key="d4">
+        <y:Geometry x="-1552.5" y="-355.5" width="80" height="40"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle refid="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0"/>
+      </data>
+    </node>
+    <node id="G:n1">
+      <port name="p0"/>
+      <port name="p1"/>
+      <port name="p2"/>
+      <port name="p3"/>
+      <data key="d2">
+        <y:Labels>
+          <y:Label>
+            <y:ISimpleLabelStyle refid="12"/>
+            <y:FreeNodeLabelModel type="layoutAnchored" x="30.799999999999955" y="346.475" angle="90">
+              <y:ModelState type="FreeNodeLabelModel"/>
+            </y:FreeNodeLabelModel>
+            <y:Text>Главная</y:Text>
+            <y:PreferredSize width="50.3" height="15.95"/>
+          </y:Label>
+        </y:Labels>
+      </data>
+      <data key="d3">1</data>
+      <data key="d4">
+        <y:Geometry x="-1256" y="-662" width="37" height="677"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle refid="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0"/>
+      </data>
+    </node>
+    <node id="G:n2">
+      <port name="p0"/>
+      <port name="p1"/>
+      <port name="p2"/>
+      <port name="p3"/>
+      <data key="d2">
+        <y:Labels>
+          <y:Label>
+            <y:ISimpleLabelStyle refid="12"/>
+            <y:InteriorLabelModel refid="9"/>
+            <y:Text>Направления</y:Text>
+            <y:PreferredSize width="82.15" height="15.95"/>
+          </y:Label>
+        </y:Labels>
+      </data>
+      <data key="d3">2</data>
+      <data key="d4">
+        <y:Geometry x="-1169" y="-585" width="101" height="40"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle refid="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0"/>
+      </data>
+    </node>
+    <node id="G:n3">
+      <port name="p0"/>
+      <data key="d2">
+        <y:Labels>
+          <y:Label>
+            <y:ISimpleLabelStyle refid="12"/>
+            <y:InteriorLabelModel refid="9"/>
+            <y:Text>О компании</y:Text>
+            <y:PreferredSize width="76.45" height="15.95"/>
+          </y:Label>
+        </y:Labels>
+      </data>
+      <data key="d3">3</data>
+      <data key="d4">
+        <y:Geometry x="-1169" y="-431" width="101" height="40"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle refid="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0"/>
+      </data>
+    </node>
+    <node id="G:n4">
+      <port name="p0"/>
+      <data key="d2">
+        <y:Labels>
+          <y:Label>
+            <y:ISimpleLabelStyle refid="12"/>
+            <y:InteriorLabelModel refid="9"/>
+            <y:Text>Услуги</y:Text>
+            <y:PreferredSize width="44.6" height="15.95"/>
+          </y:Label>
+        </y:Labels>
+      </data>
+      <data key="d3">4</data>
+      <data key="d4">
+        <y:Geometry x="-1169" y="-277" width="101" height="40"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle refid="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0"/>
+      </data>
+    </node>
+    <node id="G:n5">
+      <port name="p0"/>
+      <data key="d2">
+        <y:Labels>
+          <y:Label>
+            <y:ISimpleLabelStyle refid="12"/>
+            <y:InteriorLabelModel refid="9"/>
+            <y:Text>Контакты</y:Text>
+            <y:PreferredSize width="60.35" height="15.95"/>
+          </y:Label>
+        </y:Labels>
+      </data>
+      <data key="d3">5</data>
+      <data key="d4">
+        <y:Geometry x="-1169" y="-123" width="101" height="40"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle refid="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0"/>
+      </data>
+    </node>
+    <node id="G:n6">
+      <port name="p0"/>
+      <port name="p1"/>
+      <data key="d2">
+        <y:Labels>
+          <y:Label>
+            <y:ISimpleLabelStyle refid="12"/>
+            <y:InteriorLabelModel refid="9"/>
+            <y:Text>Телекомуникации</y:Text>
+            <y:PreferredSize width="112.25" height="15.95"/>
+          </y:Label>
+        </y:Labels>
+      </data>
+      <data key="d3">6</data>
+      <data key="d4">
+        <y:Geometry x="-1000" y="-662" width="121" height="40"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle refid="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0"/>
+      </data>
+    </node>
+    <node id="G:n7">
+      <port name="p0"/>
+      <port name="p1"/>
+      <data key="d2">
+        <y:Labels>
+          <y:Label>
+            <y:ISimpleLabelStyle refid="12"/>
+            <y:InteriorLabelModel refid="9"/>
+            <y:Text>Медиа</y:Text>
+            <y:PreferredSize width="43.1" height="15.95"/>
+          </y:Label>
+        </y:Labels>
+      </data>
+      <data key="d3">7</data>
+      <data key="d4">
+        <y:Geometry x="-1000" y="-585" width="121" height="40"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle refid="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0"/>
+      </data>
+    </node>
+    <node id="G:n8">
+      <port name="p0"/>
+      <port name="p1"/>
+      <data key="d2">
+        <y:Labels>
+          <y:Label>
+            <y:ISimpleLabelStyle refid="12"/>
+            <y:InteriorLabelModel refid="9"/>
+            <y:Text>Технологии</y:Text>
+            <y:PreferredSize width="75.7" height="15.95"/>
+          </y:Label>
+        </y:Labels>
+      </data>
+      <data key="d3">8</data>
+      <data key="d4">
+        <y:Geometry x="-1000" y="-508" width="121" height="40"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle refid="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0"/>
+      </data>
+    </node>
+    <node id="G:n9">
+      <port name="p0"/>
+      <port name="p1"/>
+      <port name="p2"/>
+      <data key="d2">
+        <y:Labels>
+          <y:Label>
+            <y:ISimpleLabelStyle refid="12"/>
+            <y:InteriorLabelModel refid="9"/>
+            <y:Text>Остальные категории</y:Text>
+            <y:PreferredSize width="133.25" height="15.95"/>
+          </y:Label>
+        </y:Labels>
+      </data>
+      <data key="d3">9</data>
+      <data key="d4">
+        <y:Geometry x="-804" y="-585" width="185" height="40"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle refid="1" xmlns="http://www.yworks.com/xml/yed-flex/1.0"/>
+      </data>
+    </node>
+    <node id="G:n10">
+      <data key="d2">
+        <y:Labels>
+          <y:Label>
+            <y:ISimpleLabelStyle refid="12"/>
+            <y:InteriorLabelModel refid="9"/>
+            <y:Text><![CDATA[Будут ли еще корневые сегменты на одном уровне с "Направления"? Если не будет может для упрощения убрать сегмент направления и сделать телекомуникации, медиа, технологии корневыми? При разработке предполагалось что таких корневых сегментов как "направления" будет несколько и каждый со своими посегментами телекомуникации, медиа, тхнологии.P.S ссылка на все записи сайта так и останется.  ]]></y:Text>
+            <y:PreferredSize width="433.55" height="99.65"/>
+          </y:Label>
+        </y:Labels>
+      </data>
+      <data key="d3">10</data>
+      <data key="d4">
+        <y:Geometry x="-900" y="-388" width="497" height="278"/>
+      </data>
+      <data key="d1">
+        <EntityRelationshipNodeStyle type="EntityRelationship_Attribute" xmlns="http://www.yworks.com/xml/yed-flex/1.0">
+          <EntityRelationshipNodeStyle.stroke>
+            <y:LineType refid="3"/>
+          </EntityRelationshipNodeStyle.stroke>
+          <EntityRelationshipNodeStyle.textFormat>
+            <y:Font family="Dialog" points="12" style="Regular" color="#000000"/>
+          </EntityRelationshipNodeStyle.textFormat>
+          <EntityRelationshipNodeStyle.fill>
+            <y:Brush refid="13"/>
+          </EntityRelationshipNodeStyle.fill>
+        </EntityRelationshipNodeStyle>
+      </data>
+    </node>
+    <edge id="G:e0" source="G:n1" target="G:n2" sourceport="p0" targetport="p0">
+      <data key="d12">0</data>
+      <data key="d10">
+        <y:IPolylineEdgeStyle>
+          <y:Pen refid="8"/>
+          <y:TargetArrow>
+            <y:DefaultArrow type="Spearhead" cropLength="0" scale="1">
+              <y:Pen refid="11"/>
+              <y:Brush refid="2"/>
+            </y:DefaultArrow>
+          </y:TargetArrow>
+        </y:IPolylineEdgeStyle>
+      </data>
+    </edge>
+    <edge id="G:e1" source="G:n1" target="G:n3" sourceport="p1" targetport="p0">
+      <data key="d12">1</data>
+      <data key="d10">
+        <y:IPolylineEdgeStyle>
+          <y:Pen refid="8"/>
+          <y:TargetArrow>
+            <y:DefaultArrow type="Spearhead" cropLength="0" scale="1">
+              <y:Pen refid="11"/>
+              <y:Brush refid="2"/>
+            </y:DefaultArrow>
+          </y:TargetArrow>
+        </y:IPolylineEdgeStyle>
+      </data>
+    </edge>
+    <edge id="G:e2" source="G:n1" target="G:n4" sourceport="p2" targetport="p0">
+      <data key="d12">2</data>
+      <data key="d10">
+        <y:IPolylineEdgeStyle>
+          <y:Pen refid="8"/>
+          <y:TargetArrow>
+            <y:DefaultArrow type="Spearhead" cropLength="0" scale="1">
+              <y:Pen refid="11"/>
+              <y:Brush refid="2"/>
+            </y:DefaultArrow>
+          </y:TargetArrow>
+        </y:IPolylineEdgeStyle>
+      </data>
+    </edge>
+    <edge id="G:e3" source="G:n1" target="G:n5" sourceport="p3" targetport="p0">
+      <data key="d12">3</data>
+      <data key="d10">
+        <y:IPolylineEdgeStyle>
+          <y:Pen refid="8"/>
+          <y:TargetArrow>
+            <y:DefaultArrow type="Spearhead" cropLength="0" scale="1">
+              <y:Pen refid="11"/>
+              <y:Brush refid="2"/>
+            </y:DefaultArrow>
+          </y:TargetArrow>
+        </y:IPolylineEdgeStyle>
+      </data>
+    </edge>
+    <edge id="G:e4" source="G:n2" target="G:n6" sourceport="p1" targetport="p0">
+      <data key="d12">4</data>
+      <data key="d10">
+        <y:IPolylineEdgeStyle>
+          <y:Pen refid="8"/>
+          <y:TargetArrow>
+            <y:DefaultArrow type="Spearhead" cropLength="0" scale="1">
+              <y:Pen refid="11"/>
+              <y:Brush refid="2"/>
+            </y:DefaultArrow>
+          </y:TargetArrow>
+        </y:IPolylineEdgeStyle>
+      </data>
+    </edge>
+    <edge id="G:e5" source="G:n2" target="G:n7" sourceport="p2" targetport="p0">
+      <data key="d12">5</data>
+      <data key="d10">
+        <y:IPolylineEdgeStyle>
+          <y:Pen refid="8"/>
+          <y:TargetArrow>
+            <y:DefaultArrow type="Spearhead" cropLength="0" scale="1">
+              <y:Pen refid="11"/>
+              <y:Brush refid="2"/>
+            </y:DefaultArrow>
+          </y:TargetArrow>
+        </y:IPolylineEdgeStyle>
+      </data>
+    </edge>
+    <edge id="G:e6" source="G:n2" target="G:n8" sourceport="p3" targetport="p0">
+      <data key="d12">6</data>
+      <data key="d10">
+        <y:IPolylineEdgeStyle>
+          <y:Pen refid="8"/>
+          <y:TargetArrow>
+            <y:DefaultArrow type="Spearhead" cropLength="0" scale="1">
+              <y:Pen refid="11"/>
+              <y:Brush refid="2"/>
+            </y:DefaultArrow>
+          </y:TargetArrow>
+        </y:IPolylineEdgeStyle>
+      </data>
+    </edge>
+    <edge id="G:e7" source="G:n6" target="G:n9" sourceport="p1" targetport="p0">
+      <data key="d12">7</data>
+      <data key="d10">
+        <y:IPolylineEdgeStyle>
+          <y:Pen refid="3"/>
+          <y:TargetArrow>
+            <y:DefaultArrow type="Delta" cropLength="0" scale="1">
+              <y:Pen refid="6"/>
+            </y:DefaultArrow>
+          </y:TargetArrow>
+        </y:IPolylineEdgeStyle>
+      </data>
+    </edge>
+    <edge id="G:e8" source="G:n7" target="G:n9" sourceport="p1" targetport="p1">
+      <data key="d12">8</data>
+      <data key="d10">
+        <y:IPolylineEdgeStyle>
+          <y:Pen refid="3"/>
+          <y:TargetArrow>
+            <y:DefaultArrow type="Delta" cropLength="0" scale="1">
+              <y:Pen refid="6"/>
+            </y:DefaultArrow>
+          </y:TargetArrow>
+        </y:IPolylineEdgeStyle>
+      </data>
+    </edge>
+    <edge id="G:e9" source="G:n8" target="G:n9" sourceport="p1" targetport="p2">
+      <data key="d12">9</data>
+      <data key="d10">
+        <y:IPolylineEdgeStyle>
+          <y:Pen refid="3"/>
+          <y:TargetArrow>
+            <y:DefaultArrow type="Delta" cropLength="0" scale="1">
+              <y:Pen refid="6"/>
+            </y:DefaultArrow>
+          </y:TargetArrow>
+        </y:IPolylineEdgeStyle>
+      </data>
+    </edge>
+  </graph>
+  <data key="d20">
+    <y:Resources/>
+  </data>
+</graphml>
