@@ -26,7 +26,7 @@ http://p101.createme.tk/wp-content/themes/tmt/images/help/shot_141017_221210.png
 http://p101.createme.tk/wp-content/themes/tmt/images/help/shot_141017_221227.png</li>
 <li>В категориях убран пункт "Все".<br />
 http://p101.createme.tk/wp-content/themes/tmt/images/help/shot_141017_221419.png</li>
-<li>Исправлен показ категорий на внутрених страницах. Теперь там будут показаны все категории родительской категории(первого уровня).<br />
+<li>Исправлен показ категорий на внутрених страницах. Теперь там будут показаны все категории родительского сегмента(первого уровня).<br />
 http://p101.createme.tk/wp-content/themes/tmt/images/help/shot_141017_221617.png</li>
 <li>На внутреней странице теперь открыта вкладка с сегментами в соответсвии с текущей записью.<br />
 http://p101.createme.tk/wp-content/themes/tmt/images/help/shot_141017_221617.png</li>
